@@ -8,9 +8,9 @@ export enum UserRole {
 type UserRoleDescription = Record<UserRole, string>;
 
 const RoleDescription: UserRoleDescription = {
-  admin: "Admin User",
-  editor: "Editor User",
-  guest: "Guest User",
+  [UserRole.admin]: "Admin User",
+  [UserRole.editor]: "Editor User",
+  [UserRole.guest]: "Guest User",
 };
 
 console.log(RoleDescription);
